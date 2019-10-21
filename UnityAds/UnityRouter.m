@@ -202,6 +202,7 @@
 
 - (void)unityAdsDidClick:(NSString *)placementId {
     id delegate = [self getDelegate:placementId];
+    
     if (delegate != nil) {
         [delegate unityAdsDidClick:placementId];
     }
